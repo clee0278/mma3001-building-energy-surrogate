@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.16, pytest-8.4.2, pluggy-1.7.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /content/mma3001-building-energy-surrogate
+plugins: langsmith-0.14.11, typeguard-4.6.0, platformdirs-4.13.4, anyio-4.15.1
+collecting ... collected 6 items
+
+tests/test_project.py::test_io_validator_accepts_valid_data PASSED       [ 16%]
+tests/test_project.py::test_io_validator_rejects_nan_and_inf PASSED      [ 33%]
+tests/test_project.py::test_io_validator_rejects_unphysical_bounds PASSED [ 50%]
+tests/test_project.py::test_manufactured_solution_verification PASSED    [ 66%]
+tests/test_project.py::test_collinear_matrix_conditioning_stabilization PASSED [ 83%]
+tests/test_project.py::test_random_forest_non_negative_outputs PASSED    [100%]
+
+============================== 6 passed in 1.37s ===============================
